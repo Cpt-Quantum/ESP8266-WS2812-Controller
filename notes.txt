@@ -1,0 +1,2 @@
+3.3V regulator:
+AP2114HA-3.3TRG1DICT-ND
