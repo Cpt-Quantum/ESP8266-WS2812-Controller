@@ -210,62 +210,6 @@ F 3 "" H 4250 2650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4250 2650 4250 2600
-$Comp
-L Device:Q_NPN_BEC Q?
-U 1 1 5BCD0280
-P 4700 6000
-AR Path="/5BCD0280" Ref="Q?"  Part="1" 
-AR Path="/5BCCCF44/5BCD0280" Ref="Q?"  Part="1" 
-F 0 "Q?" H 4890 6046 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 4890 5955 50  0000 L CNN
-F 2 "" H 4900 6100 50  0001 C CNN
-F 3 "~" H 4700 6000 50  0001 C CNN
-	1    4700 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_BEC Q?
-U 1 1 5BCD0287
-P 4700 6700
-AR Path="/5BCD0287" Ref="Q?"  Part="1" 
-AR Path="/5BCCCF44/5BCD0287" Ref="Q?"  Part="1" 
-F 0 "Q?" H 4890 6654 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 4890 6745 50  0000 L CNN
-F 2 "" H 4900 6800 50  0001 C CNN
-F 3 "~" H 4700 6700 50  0001 C CNN
-	1    4700 6700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5BCD028E
-P 5150 6000
-AR Path="/5BCD028E" Ref="R?"  Part="1" 
-AR Path="/5BCCCF44/5BCD028E" Ref="R?"  Part="1" 
-F 0 "R?" V 4943 6000 50  0000 C CNN
-F 1 "10kR" V 5034 6000 50  0000 C CNN
-F 2 "" V 5080 6000 50  0001 C CNN
-F 3 "~" H 5150 6000 50  0001 C CNN
-	1    5150 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5BCD0295
-P 5150 6700
-AR Path="/5BCD0295" Ref="R?"  Part="1" 
-AR Path="/5BCCCF44/5BCD0295" Ref="R?"  Part="1" 
-F 0 "R?" V 4943 6700 50  0000 C CNN
-F 1 "10kR" V 5034 6700 50  0000 C CNN
-F 2 "" V 5080 6700 50  0001 C CNN
-F 3 "~" H 5150 6700 50  0001 C CNN
-	1    5150 6700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4900 6700 5000 6700
-Wire Wire Line
-	4900 6000 5000 6000
 Text HLabel 5450 3100 2    50   Output ~ 0
 TX_ESP
 Text HLabel 5450 3300 2    50   Input ~ 0
@@ -358,54 +302,6 @@ Connection ~ 5850 3000
 Wire Wire Line
 	6500 3200 6400 3200
 Connection ~ 6400 3200
-Wire Wire Line
-	4600 5700 4600 5800
-Wire Wire Line
-	4600 7000 4600 6900
-Wire Wire Line
-	4600 6500 4600 6400
-Wire Wire Line
-	4600 6400 5400 6400
-Wire Wire Line
-	5400 6400 5400 6000
-Wire Wire Line
-	5400 6000 5300 6000
-Wire Wire Line
-	4600 6200 4600 6300
-Wire Wire Line
-	4600 6300 5450 6300
-Wire Wire Line
-	5450 6300 5450 6700
-Wire Wire Line
-	5450 6700 5300 6700
-Text Label 4600 5700 2    50   ~ 0
-~RST
-Text Label 4600 7000 2    50   ~ 0
-GPIO0
-Text Label 5950 3000 0    50   ~ 0
-GPIO0
-Text Label 4050 2300 2    50   ~ 0
-~RST
-Text HLabel 5500 6000 2    50   BiDi ~ 0
-DTR
-Text HLabel 5550 6700 2    50   BiDi ~ 0
-RTS
-Wire Wire Line
-	5550 6700 5450 6700
-Connection ~ 5450 6700
-Wire Wire Line
-	5500 6000 5400 6000
-Connection ~ 5400 6000
-Text Notes 4600 5450 0    50   ~ 0
-Auto-programming circuit
-Wire Notes Line
-	3950 7100 5850 7100
-Wire Notes Line
-	5850 7100 5850 5300
-Wire Notes Line
-	5850 5300 3950 5300
-Wire Notes Line
-	3950 5300 3950 7100
 Text HLabel 4250 3600 0    50   BiDi ~ 0
 Chip_Select
 Text HLabel 4250 3700 0    50   BiDi ~ 0
@@ -446,4 +342,8 @@ EN
 Wire Wire Line
 	3650 3200 3700 3200
 Connection ~ 3700 3200
+Text HLabel 4050 2300 0    50   Input ~ 0
+~RST
+Text HLabel 5950 3000 2    50   3State ~ 0
+GPIO0
 $EndSCHEMATC
