@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name ESP8266-WS2812B-cache)(type Legacy)(uri ${KIPRJMOD}/ESP8266-WS2812B-cache.lib)(options "")(descr ""))
   (lib (name 3.3V-reg)(type Legacy)(uri ${KIPRJMOD}/3.3V-reg.lib)(options "")(descr ""))
+  (lib (name ESP8266-WS2812B-rescue)(type Legacy)(uri ${KIPRJMOD}/ESP8266-WS2812B-rescue.lib)(options "")(descr ""))
 )

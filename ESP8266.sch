@@ -20,7 +20,7 @@ U 1 1 5BCCD83E
 P 4850 3600
 F 0 "U1" H 4850 4578 50  0000 C CNN
 F 1 "ESP-12F" H 4850 4487 50  0000 C CNN
-F 2 "RF_Module:ESP-12E" H 4850 3600 50  0001 C CNN
+F 2 "RF_Modules:ESP-12E" H 4850 3600 50  0001 C CNN
 F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 4500 3700 50  0001 C CNN
 	1    4850 3600
 	1    0    0    -1  

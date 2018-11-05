@@ -80,7 +80,7 @@ U 1 1 5BC50259
 P 7200 4200
 F 0 "J3" H 7280 4192 50  0000 L CNN
 F 1 "Conn_01x06" H 7280 4101 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x06_Pitch2.54mm" H 7200 4200 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7200 4200 50  0001 C CNN
 F 3 "~" H 7200 4200 50  0001 C CNN
 	1    7200 4200
 	1    0    0    -1  
