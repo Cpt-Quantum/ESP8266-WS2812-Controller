@@ -17,25 +17,25 @@ $EndDescr
 $Comp
 L power:+3.3V #PWR010
 U 1 1 5BC405C1
-P 4350 2450
-F 0 "#PWR010" H 4350 2300 50  0001 C CNN
-F 1 "+3.3V" H 4365 2623 50  0000 C CNN
-F 2 "" H 4350 2450 50  0001 C CNN
-F 3 "" H 4350 2450 50  0001 C CNN
-	1    4350 2450
+P 5100 2450
+F 0 "#PWR010" H 5100 2300 50  0001 C CNN
+F 1 "+3.3V" H 5115 2623 50  0000 C CNN
+F 2 "" H 5100 2450 50  0001 C CNN
+F 3 "" H 5100 2450 50  0001 C CNN
+	1    5100 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 2450 4350 2500
+	5100 2450 5100 2500
 $Comp
 L power:+5V #PWR06
 U 1 1 5BC40E42
-P 2700 2450
-F 0 "#PWR06" H 2700 2300 50  0001 C CNN
-F 1 "+5V" H 2715 2623 50  0000 C CNN
-F 2 "" H 2700 2450 50  0001 C CNN
-F 3 "" H 2700 2450 50  0001 C CNN
-	1    2700 2450
+P 3450 2450
+F 0 "#PWR06" H 3450 2300 50  0001 C CNN
+F 1 "+5V" H 3465 2623 50  0000 C CNN
+F 2 "" H 3450 2450 50  0001 C CNN
+F 3 "" H 3450 2450 50  0001 C CNN
+	1    3450 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -50,7 +50,7 @@ F 3 "~" H 1450 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2700 2450 2700 2500
+	3450 2450 3450 2500
 $Comp
 L power:GND #PWR01
 U 1 1 5BC3F592
@@ -74,18 +74,7 @@ Connection ~ 1250 3200
 NoConn ~ 1600 2700
 NoConn ~ 1600 2800
 NoConn ~ 1600 2900
-$Comp
-L Connector_Generic:Conn_01x06 J3
-U 1 1 5BC50259
-P 7200 4200
-F 0 "J3" H 7280 4192 50  0000 L CNN
-F 1 "Conn_01x06" H 7280 4101 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7200 4200 50  0001 C CNN
-F 3 "~" H 7200 4200 50  0001 C CNN
-	1    7200 4200
-	1    0    0    -1  
-$EndComp
-Text Notes 7300 4100 0    50   ~ 0
+Text Notes 7100 3900 0    50   ~ 0
 Programming Header
 $Comp
 L Connector_Generic:Conn_01x03 J4
@@ -112,12 +101,9 @@ F 3 "" H 6750 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 4000 7000 3750
-Wire Wire Line
 	7000 3750 6750 3750
 Wire Wire Line
 	6750 3750 6750 3800
-NoConn ~ 7000 4200
 $Comp
 L power:GND #PWR016
 U 1 1 5BCC1FF9
@@ -178,14 +164,6 @@ F19 "EN" I L 4400 4900 50
 F20 "~RST" I R 6350 4100 50 
 F21 "GPIO0" T R 6350 4500 50 
 $EndSheet
-Wire Wire Line
-	6350 4100 7000 4100
-Wire Wire Line
-	6350 4300 7000 4300
-Wire Wire Line
-	6350 4400 7000 4400
-Wire Wire Line
-	6350 4500 7000 4500
 NoConn ~ 4400 4700
 NoConn ~ 4400 4900
 NoConn ~ 4400 5100
@@ -418,29 +396,29 @@ NoConn ~ 4400 4400
 NoConn ~ 4400 4300
 NoConn ~ 4400 4200
 $Sheet
-S 3150 2250 900  700 
+S 3900 2250 900  700 
 U 5BD89DA4
 F0 "AP2114HA-3.3" 50
 F1 "AP2114HA-3.3.sch" 50
-F2 "5V" U L 3150 2500 50 
-F3 "3.3V" U R 4050 2500 50 
-F4 "GND" U L 3150 2750 50 
+F2 "5V" U L 3900 2500 50 
+F3 "3.3V" U R 4800 2500 50 
+F4 "GND" U L 3900 2750 50 
 $EndSheet
 Wire Wire Line
-	4050 2500 4350 2500
+	4800 2500 5100 2500
 Wire Wire Line
-	3150 2750 3050 2750
+	3900 2750 3800 2750
 Wire Wire Line
-	3050 2750 3050 2850
+	3800 2750 3800 2850
 $Comp
 L power:GND #PWR08
 U 1 1 5BD8DB67
-P 3050 2850
-F 0 "#PWR08" H 3050 2600 50  0001 C CNN
-F 1 "GND" H 3055 2677 50  0000 C CNN
-F 2 "" H 3050 2850 50  0001 C CNN
-F 3 "" H 3050 2850 50  0001 C CNN
-	1    3050 2850
+P 3800 2850
+F 0 "#PWR08" H 3800 2600 50  0001 C CNN
+F 1 "GND" H 3805 2677 50  0000 C CNN
+F 2 "" H 3800 2850 50  0001 C CNN
+F 3 "" H 3800 2850 50  0001 C CNN
+	1    3800 2850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -456,14 +434,11 @@ F 3 "~" H 2100 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 2500 2350 2500
-Connection ~ 2700 2500
+Connection ~ 3450 2500
 Wire Wire Line
-	2700 2500 3150 2500
+	3450 2500 3900 2500
 Wire Wire Line
 	2350 2800 2350 2500
-Connection ~ 2350 2500
-Wire Wire Line
-	2350 2500 2700 2500
 $Comp
 L power:GND #PWR04
 U 1 1 5BDA4940
@@ -581,4 +556,106 @@ Text Label 8300 5750 0    50   ~ 0
 Button_Open_Side
 Wire Wire Line
 	7300 4850 7300 5750
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5BE0F936
+P 2650 2500
+F 0 "FB1" V 2376 2500 50  0000 C CNN
+F 1 "Ferrite_Bead" V 2467 2500 50  0000 C CNN
+F 2 "Inductors_SMD:L_0805" V 2580 2500 50  0001 C CNN
+F 3 "~" H 2650 2500 50  0001 C CNN
+	1    2650 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 2500 2500 2500
+Connection ~ 2350 2500
+Wire Wire Line
+	2800 2500 3450 2500
+Text Label 1900 2500 0    50   ~ 0
+5V_Input
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J3
+U 1 1 5BE1A98A
+P 7250 4300
+F 0 "J3" H 7300 4617 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 7300 4526 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 7250 4300 50  0001 C CNN
+F 3 "~" H 7250 4300 50  0001 C CNN
+	1    7250 4300
+	1    0    0    -1  
+$EndComp
+Text Label 6400 4100 0    50   ~ 0
+~RST
+Wire Wire Line
+	6350 4100 6400 4100
+Text Label 6400 4300 0    50   ~ 0
+RXD
+Wire Wire Line
+	6400 4300 6350 4300
+Text Label 6400 4400 0    50   ~ 0
+TXD
+Wire Wire Line
+	6400 4400 6350 4400
+Text Label 6400 4500 0    50   ~ 0
+GPIO0
+Wire Wire Line
+	6400 4500 6350 4500
+Wire Wire Line
+	7000 4200 7050 4200
+Wire Wire Line
+	7000 3750 7000 4200
+NoConn ~ 7050 4300
+Text Label 7550 4200 0    50   ~ 0
+~RST
+Text Label 7550 4300 0    50   ~ 0
+RXD
+Text Label 7050 4400 2    50   ~ 0
+TXD
+Text Label 7550 4400 0    50   ~ 0
+GPIO0
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5BE26377
+P 6750 1450
+F 0 "H1" H 6850 1496 50  0000 L CNN
+F 1 "MountingHole" H 6850 1405 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H 6750 1450 50  0001 C CNN
+F 3 "~" H 6750 1450 50  0001 C CNN
+	1    6750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5BE2687A
+P 7600 1450
+F 0 "H3" H 7700 1496 50  0000 L CNN
+F 1 "MountingHole" H 7700 1405 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H 7600 1450 50  0001 C CNN
+F 3 "~" H 7600 1450 50  0001 C CNN
+	1    7600 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5BE268DA
+P 6750 1700
+F 0 "H2" H 6850 1746 50  0000 L CNN
+F 1 "MountingHole" H 6850 1655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H 6750 1700 50  0001 C CNN
+F 3 "~" H 6750 1700 50  0001 C CNN
+	1    6750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5BE26922
+P 7600 1700
+F 0 "H4" H 7700 1746 50  0000 L CNN
+F 1 "MountingHole" H 7700 1655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H 7600 1700 50  0001 C CNN
+F 3 "~" H 7600 1700 50  0001 C CNN
+	1    7600 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
